@@ -20,7 +20,7 @@
   <widget class="QWidget" name="centralwidget">
    <layout class="QVBoxLayout" name="verticalLayout_2">
     <item>
-     <widget class="QTextEdit" name="textEdit">
+     <widget class="QTextEdit" name="uriTextEdit">
       <property name="sizePolicy">
        <sizepolicy hsizetype="Expanding" vsizetype="MinimumExpanding">
         <horstretch>0</horstretch>
@@ -35,7 +35,7 @@
     <item>
      <layout class="QGridLayout" name="gridLayout">
       <item row="0" column="0">
-       <widget class="QPushButton" name="pushButton">
+       <widget class="QPushButton" name="clearButton">
         <property name="text">
          <string>C&amp;lear</string>
         </property>

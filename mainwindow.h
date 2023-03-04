@@ -23,6 +23,7 @@ private:
 
 private slots:
     void showSettings();
+    void downloadStart();
 };
 
 #endif // MAINWINDOW_H
