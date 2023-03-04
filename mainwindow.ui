@@ -13,6 +13,10 @@
   <property name="windowTitle">
    <string>YT Download</string>
   </property>
+  <property name="windowIcon">
+   <iconset resource="resources.qrc">
+    <normaloff>:/resources/Icon.png</normaloff>:/resources/Icon.png</iconset>
+  </property>
   <widget class="QWidget" name="centralwidget">
    <layout class="QVBoxLayout" name="verticalLayout_2">
     <item>
@@ -36,7 +40,8 @@
          <string>C&amp;lear</string>
         </property>
         <property name="icon">
-         <iconset theme="edit-delete"/>
+         <iconset theme="edit-delete">
+          <normaloff>.</normaloff>.</iconset>
         </property>
         <property name="iconSize">
          <size>
@@ -68,7 +73,8 @@
          <string>&amp;Download</string>
         </property>
         <property name="icon">
-         <iconset theme="go-next"/>
+         <iconset theme="go-next">
+          <normaloff>.</normaloff>.</iconset>
         </property>
         <property name="iconSize">
          <size>
@@ -145,6 +151,8 @@
    </property>
   </action>
  </widget>
- <resources/>
+ <resources>
+  <include location="resources.qrc"/>
+ </resources>
  <connections/>
 </ui>

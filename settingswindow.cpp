@@ -9,8 +9,7 @@ SettingsWindow::SettingsWindow(QWidget *parent) :
 {
     ui->setupUi(this);
 
-    // FixMe (selectionChanged())
-    connect(ui->ytdlLocationLineEdit, SIGNAL(selectionChanged()), this, SLOT(setYTLocation()));
+    connect(ui->ytdlLocationButton, SIGNAL(clicked(bool)), this, SLOT(setYTLocation()));
 }
 
 SettingsWindow::~SettingsWindow()
@@ -21,5 +20,8 @@ SettingsWindow::~SettingsWindow()
 void SettingsWindow::setYTLocation()
 {
     QString fileName = QFileDialog::getOpenFileName(this, "Select yt-dl file", QDir::currentPath(), "All files (*)");
-    ui->ytdlLocationLineEdit->setText(fileName);
+
+    if (fileName.length() > 0) {
+        ui->ytdlLocationLineEdit->setText(fileName);
+    }
 }

@@ -11,9 +11,14 @@ FORMS += \
 
 HEADERS += \
     mainwindow.h \
-    settingswindow.h
+    settingswindow.h \
+    yt.h
 
 SOURCES += \
     main.cpp \
     mainwindow.cpp \
-    settingswindow.cpp
+    settingswindow.cpp \
+    yt.cpp
+
+RESOURCES += \
+    resources.qrc
