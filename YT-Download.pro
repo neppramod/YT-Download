@@ -8,19 +8,16 @@ greaterThan(QT_MAJOR_VERSION, 4): QT += widgets
 DEFINES += QT_DISABLE_DEPRECATED_BEFORE=0x050F00
 
 FORMS += \
-    mainwindow.ui \
-    settingswindow.ui
+    mainwindow.ui
 
 HEADERS += \
-    mainwindow.h \
-    settingswindow.h \
-    yt.h
+    mainwindow.h
 
 SOURCES += \
     main.cpp \
-    mainwindow.cpp \
-    settingswindow.cpp \
-    yt.cpp
+    mainwindow.cpp
 
-RESOURCES += \
-    resources.qrc
+DISTFILES += \
+    LICENSE \
+    setup.sh \
+    uninstall.sh

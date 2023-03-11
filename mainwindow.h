@@ -4,8 +4,6 @@
 #include <QMainWindow>
 #include <QProcess>
 
-#include "settingswindow.h"
-
 namespace Ui {
 class MainWindow;
 }
@@ -20,7 +18,6 @@ public:
 
 private:
     Ui::MainWindow *ui;
-    SettingsWindow *settingsWindow;
     QProcess *process;
     QString *stdoutTxt;
 

@@ -11,9 +11,6 @@ MainWindow::MainWindow(QWidget *parent) :
 {
     ui->setupUi(this);
 
-    // Initialize SettingsWindow
-    settingsWindow = new SettingsWindow(nullptr);
-
     process = new QProcess();
 
     // Connect Settings Menu Option to SettingsWindow
@@ -43,7 +40,7 @@ MainWindow::~MainWindow()
 
 void MainWindow:: showSettings()
 {
-    settingsWindow->show();
+
 }
 
 void MainWindow::downloadStart()
